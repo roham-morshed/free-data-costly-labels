@@ -1,0 +1,360 @@
+{
+  "config": {
+    "ablation": {
+      "axes": {
+        "alpha": [
+          0.05,
+          0.2,
+          0.5
+        ],
+        "delta": [
+          -0.02,
+          0.0,
+          0.02
+        ],
+        "k_neighbors": [
+          3,
+          7,
+          15
+        ],
+        "n_kernels": [
+          2000,
+          10000
+        ],
+        "rho": [
+          0.1,
+          0.25,
+          0.5,
+          1.0
+        ],
+        "rounds": [
+          1,
+          2,
+          4
+        ],
+        "transform": [
+          "minirocket",
+          "rocket",
+          "multirocket"
+        ]
+      },
+      "label_budgets": [
+        5,
+        20
+      ],
+      "n_datasets": 15,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "augment": {
+      "jitter_sigma": 0.05,
+      "n_copies": 8,
+      "scaling_sigma": 0.1,
+      "slice_ratio": 0.9,
+      "warp_n_knots": 4,
+      "warp_sigma": 0.2
+    },
+    "dtw": {
+      "window": 0.1
+    },
+    "features": {
+      "dtype": "float32",
+      "n_kernels": 10000,
+      "transform": "minirocket",
+      "transform_seed": 0
+    },
+    "grid": {
+      "label_budgets": [
+        1,
+        2,
+        5,
+        10,
+        20
+      ],
+      "methods": [
+        "1nn_dtw",
+        "sup_strict",
+        "sup_tf",
+        "self_train",
+        "label_spread",
+        "augment",
+        "safe_ssl",
+        "safe_ssl_novalve"
+      ],
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    "label_spread": {
+      "alpha": 0.2,
+      "kernel": "knn",
+      "max_iter": 100,
+      "n_neighbors": 7,
+      "tol": 0.001
+    },
+    "lfa": {
+      "bootstrap_frac": 0.8,
+      "kmeans_n_init": 10,
+      "knn_purity_k": 7,
+      "n_bootstrap": 10,
+      "pca_dims": 50,
+      "seed": 0
+    },
+    "logreg": {
+      "C": 1.0,
+      "max_iter": 2000
+    },
+    "paths": {
+      "data_cache": "data/cache",
+      "failures": "results/failures",
+      "features": "features",
+      "figures": "paper/figures",
+      "results_ablation": "results/ablation",
+      "results_lfa": "results/lfa",
+      "results_raw": "results/raw",
+      "tables": "paper/tables"
+    },
+    "ridge": {
+      "alphas_logspace": [
+        -3,
+        3,
+        10
+      ]
+    },
+    "runtime": {
+      "n_jobs": -3,
+      "verbose": 5
+    },
+    "safe_ssl": {
+      "alpha": 0.2,
+      "delta": 0.0,
+      "k_neighbors": 7,
+      "max_iter": 100,
+      "rho": 0.25,
+      "rounds": 2,
+      "tol": 0.001,
+      "valve_max_folds": 5
+    },
+    "self_train": {
+      "max_iter": 10,
+      "threshold": 0.75
+    },
+    "stats": {
+      "alpha": 0.05,
+      "recovery_min_gap": 0.02,
+      "regression_threshold": 0.01
+    }
+  },
+  "cpu": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+  "cpu_count": 16,
+  "data_cache_bytes": 148433290,
+  "dataset_hashes": {
+    "ChlorineConcentration": {
+      "test": "9a777fe943afdf48c4025c9cc2972deab36695f35e02bed8d23c6cdab7212045",
+      "train": "fe055a22114041a8c671777ad491231a92347a1179e5924810ce02546180522d"
+    },
+    "Computers": {
+      "test": "732fd6f6df8d163d7a9e30461971fed928a2be967690c7dd7f5f834e5eff4fd0",
+      "train": "8cff92024b593f90ad2e9a9da8bc4970268c5bd8ab5fc692bd6328137ea4523b"
+    },
+    "DistalPhalanxOutlineAgeGroup": {
+      "test": "5ade6e7a32c5ec6250223f6f11223370b7544de7dc134180b0ad766bfd959d72",
+      "train": "610bb5e9a94aa91fdffa13d33e99c7cf22167de179b5daf3b60fa1ee0707b2a4"
+    },
+    "DistalPhalanxOutlineCorrect": {
+      "test": "4d41d798ed03980841982b80640068e9993f7f31b606348dccecf0d2a36ce8e1",
+      "train": "634fc67335fe97f4c56aef0a875dfd8efbdbbea0160909b5b567268b74858d69"
+    },
+    "ECG200": {
+      "test": "ceb33ef207c2f9b84436334f43420179bf6e8a5b8663e3616c92d61b6986b0b9",
+      "train": "e4911ac7f1097325df1873cd0a729c7f15cb94cc83e5d92d2f1d2dc684b1b0f3"
+    },
+    "Earthquakes": {
+      "test": "5bf169685c85a17275e974814d0b0a0f690c98c3c56e4fd9f19571df076e5cda",
+      "train": "1ec370c1ac950365515e27fc15f030e7dfb3ca94a85d42d81b5d85a691ce7282"
+    },
+    "EthanolLevel": {
+      "test": "dffa9e062660b0b2af0028129bceb6c418e265866fc3b1a4fb56e805589089a6",
+      "train": "035d4cc64c268111d0699d1c7428b77148a07509eea99e72ec19cd7f3cf74e7e"
+    },
+    "FreezerRegularTrain": {
+      "test": "45c88934ce2213328c0e237f6f5448788f60e56d0d438ef7c4cae45f281ed4fa",
+      "train": "6ffe1eb7f6cb7433896893a7142032b8bdefc5e1373665f5b2c576b84e0991c2"
+    },
+    "GunPointAgeSpan": {
+      "test": "17d0a37f3518e2c62ceccc450692ae79dd9a1ec6535ce2b21e6b207dec42fc8b",
+      "train": "0d671f363326dfb2f4f4df5d7aaae694799329758314d8a9d2b3a838fef5f91c"
+    },
+    "GunPointMaleVersusFemale": {
+      "test": "0f33a8936dabf21d43370f2df88688477576abb3d3a9dc6214cfaef12e516303",
+      "train": "c2c0b06ffac851810fa55bc100967836be980ae5270c09429832d6d1d7952426"
+    },
+    "GunPointOldVersusYoung": {
+      "test": "55ba5198f9cd3f22b18d401735cc04c73ba1cca4f15b186ed6a7ad57c5c38ab5",
+      "train": "bdee11e35d7c06913995c52dc500ce310f9ceef6f62ddeae1e950318e93ab9f4"
+    },
+    "Ham": {
+      "test": "59c26f20d5175d8b85443df2922d8c20fe4121ea8330dbae9b0df879d919a0e6",
+      "train": "d858ef64c560784668d33f6c946112a3ccec85340adafb4e2a2eb8b05f8935fe"
+    },
+    "Herring": {
+      "test": "34af51a8c817277a41ae54aaa057d19d4cd6d7e19d62cc5bc67096468597c636",
+      "train": "307afdbd14a7bce6f02eacbf3f7c770816053d62d7f9fcb8b7fbae7963bd3594"
+    },
+    "ItalyPowerDemand": {
+      "test": "187a59c5f599366838c52747cd05b376b7ac90fe33536de28ec0e7fd9ede1339",
+      "train": "7c43abca853a0c58eef4fc25565f215e58472b38128ba6df77075c7f4b845286"
+    },
+    "LargeKitchenAppliances": {
+      "test": "aa9e9a2aa73e81e298ed1fe11b34c14571101dbe473f0e6ccdc40878b8ebe508",
+      "train": "e970abc93d0d029f24c336ff4dc9f9923d82f452eb569b9a57138b8c26ef90c5"
+    },
+    "MiddlePhalanxOutlineAgeGroup": {
+      "test": "350c029664bc2e4622f693ec7912f6ad099ff75c000aaf5fc91de1dec2dec278",
+      "train": "ee22b266db087a34c2fc6282b48c35ac0f9fbe8423ce14521b5972c5b3db95ab"
+    },
+    "MiddlePhalanxOutlineCorrect": {
+      "test": "77ef6df3855dda2e4121c65690510741f81c16b073e8e55591845d946b8a6a7c",
+      "train": "0f06f1a6e376d11b5442b2a77f02a04db26688b5b6a89e60c710961d741cc475"
+    },
+    "MiddlePhalanxTW": {
+      "test": "9eadcf13a75badaae06a3fb487fb1d2417ba291e779c9131903f917cacb8383f",
+      "train": "6e5ab4d208a6a02ab99c4be70d55f7fb760c70157a96ad466de009e6d1bd6423"
+    },
+    "MixedShapesRegularTrain": {
+      "test": "557806fccb32eac03f8c34302e57843dfc0cf83704cba4446de217864ba8088f",
+      "train": "7f203dd88a8aff47c7e4718b689547ae42aeb69a181481955b382ef8d577edbc"
+    },
+    "PowerCons": {
+      "test": "782c4d27d4f92b46aac4a10d292064406d86b553bf4ffed2b8667d78a8fdc9c4",
+      "train": "9b15511bc5324ca63183421bd50eaba3ce21798dfef2f2d36709d0c02bca46b0"
+    },
+    "ProximalPhalanxOutlineAgeGroup": {
+      "test": "2f2bc969f050b39022799cb6b9aa5b93934af7429c04fd585967e0af380f4c9a",
+      "train": "b8783ed8cdee35a4057af7bf823cf7a0406714b3c6dddead86cb80176151ddb0"
+    },
+    "ProximalPhalanxOutlineCorrect": {
+      "test": "a43810757d19e9b1f6a00b2532b5c7f3cc8f1256c1d8f733e61864c3243313f8",
+      "train": "41af1036cc8004af9e91af4a9d21af4319b2f8645b4df534899480047816b33b"
+    },
+    "RefrigerationDevices": {
+      "test": "331c6305ad0bb94c28fbdbd77fd4ffe34a3526e70e89753efb93d50876c5cb0e",
+      "train": "03ffa4e5ad63b1058730440cad6e44da7dc40bd61463d0155b283146816ee907"
+    },
+    "ScreenType": {
+      "test": "0996cd2c19e2075ee7e5f3e76664d2db850fa69207c113f3f9bd8eed3f7d7c36",
+      "train": "16c46ba7b35685ee0def33d9d1f8ae98887e633680ddd9cc68891b10226b351f"
+    },
+    "SemgHandGenderCh2": {
+      "test": "b4b39ccdd504aa58d93ea8f6b015d7a813c5df21bfd4de7440c1964e87b96d48",
+      "train": "0950b2c3a0533a4f2ba58e200914b85fd5d754305a7f649a5d4045112ffd5bd9"
+    },
+    "SemgHandMovementCh2": {
+      "test": "b2a65ef9e47c40b7f6238f2a5b358fa5026bb7327f24b99a48a224a79ac0261e",
+      "train": "c8e501f1166c6a4ff0f5d8e89cc36d6db7e9ef612a28957c5961839ad082f941"
+    },
+    "SemgHandSubjectCh2": {
+      "test": "409298912311a7a67a80819d2317608d30f493cd09f8d48780b72b011b251370",
+      "train": "e972b1abc732fa07b149a5fc04b858275c46f64656cc90efd5a6876eae5e6529"
+    },
+    "SmallKitchenAppliances": {
+      "test": "2e37290419c830430d788f53f44d50ab26ea8c0d6c162652c8aca60db0a373e8",
+      "train": "359b4904f63f99ae6f047bc11828fd7c0ba24727155a21e3df503e83ad568c25"
+    },
+    "SmoothSubspace": {
+      "test": "aee0ddd86021440c890761d4c21bf59870d1c95707181ef1b29fb0226471ef89",
+      "train": "468ab62e8cdcd5b47b65a8097a6c3462cdd4b5c04721ba7ca6d98df2cba63e29"
+    },
+    "Strawberry": {
+      "test": "aeedcfb02cbbf4f8ad239f5b77b1eced2caff370d0f50bebc0ce8c02d93c80c0",
+      "train": "27430f0d9272a2daa9ad8e49b7f1bb48195863d4a5dd473e6f132ab309b1af9f"
+    },
+    "SyntheticControl": {
+      "test": "3ff15c5f7bd00e9676e21afe0262919eab882c46940ad52bae2206fff18c6e74",
+      "train": "dbe90c453a8175abd39be597c77a268f9d4a48b6926635795dce7f2126c3f51c"
+    },
+    "TwoPatterns": {
+      "test": "4d5d4b78477404774f18f77d45320a3b5dd9384a47e5420898cb22ba878e8068",
+      "train": "cb77bfb448a2beccdcadf0d645f7426f515c7bf29ef532b979744be0faccd611"
+    },
+    "UWaveGestureLibraryAll": {
+      "test": "e8aff9fd7ddd121b8c2e593dc0dd7b6e9cb7a3c6b92345a107e6423a16286d79",
+      "train": "94b9b52507a469562b19e4e890d035c5e71a13a316741bd4764084dcd12354c3"
+    },
+    "UWaveGestureLibraryX": {
+      "test": "f0efdf86fa4519a68d58adc0de5a4913bb86b4d921ca911b93cd2ab6f1a73f64",
+      "train": "73089e53d151fd8d362737a634d632882233550393a5b82594c478891e9d3e66"
+    },
+    "UWaveGestureLibraryY": {
+      "test": "1e44302d1cfe4b11a9b84f457a6a98fb002982dff30ca1aaeb320ac044eb68fd",
+      "train": "e8ee08934ea2a37956d00aa029a5beaca06ca7bb63787375e65db95a3f197809"
+    },
+    "UWaveGestureLibraryZ": {
+      "test": "68d31bce500728f5d0ff26477842707bcba451f28ee99105fb0c524b85690d73",
+      "train": "2c54e5635b39d6cc03479997d00c9c10558c5aa69a59725a2f807ffa00e4a1a1"
+    },
+    "Wafer": {
+      "test": "0d7e68f5563b9e76115235b00ba0fd06c48de88c535fec5b549da824d875390c",
+      "train": "af6ab4fa3ccfcd56cf5026600a0ce3eb3ab2295140a2a3bf9691ba64a5511e29"
+    },
+    "Wine": {
+      "test": "482d3c5fef083d9218ebe1febe67290cb6174049f634d70696dd4f9f4077506a",
+      "train": "d8c7bcef955710e186104ea715746a6ea7ccd0c588fe71c9bb01850c1d38ba02"
+    },
+    "WormsTwoClass": {
+      "test": "d51f640790063281ecc2ee8c48ca1ec79bc0b846acdcc3175401082f809af076",
+      "train": "531630cea53847992b0b41ebc85f498926c307f65ff3ca5cb2fc84e92b78ed72"
+    },
+    "Yoga": {
+      "test": "76f08158693c34b028d571b15b35dccbb5bbad7224eec15c23e6425b9ab9bedf",
+      "train": "beb0603e4a40747d2c52568cc8115315ecd8697668f0c94407ea6444bdde7574"
+    }
+  },
+  "feature_cache_bytes": 12441709992,
+  "feature_cache_human": "11.6 GB",
+  "n_cells": 2000,
+  "n_datasets": 40,
+  "n_failures": 0,
+  "n_rows": 16600,
+  "platform": "Windows-10-10.0.19045-SP0",
+  "selection_rules": {
+    "equal_length": true,
+    "max_classes": 10,
+    "max_length": 2000,
+    "max_n_train": 1500,
+    "max_n_train_plus_test": 7500,
+    "min_class_count_train": 25,
+    "no_missing_values": true,
+    "relaxation_note": "Under the specification's compute caps (n_train+n_test<=2000, length<=500) only 18 of the 112 univariate equal-length UCR datasets qualify. The caps were relaxed to the smallest values yielding the target of 40 datasets; the scientific rules (n_classes<=10, min class in train>=25) are unchanged.",
+    "spec_original_max_length": 500,
+    "spec_original_max_n_train_plus_test": 2000,
+    "univariate": true
+  },
+  "total_measured_seconds": 80837.56985000015,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

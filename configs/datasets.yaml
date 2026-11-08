@@ -1,0 +1,1295 @@
+selection_rules:
+  max_n_train: 1500
+  max_n_train_plus_test: 7500
+  max_length: 2000
+  max_classes: 10
+  min_class_count_train: 25
+  univariate: true
+  equal_length: true
+  no_missing_values: true
+  spec_original_max_n_train_plus_test: 2000
+  spec_original_max_length: 500
+  relaxation_note: Under the specification's compute caps (n_train+n_test<=2000, length<=500)
+    only 18 of the 112 univariate equal-length UCR datasets qualify. The caps were
+    relaxed to the smallest values yielding the target of 40 datasets; the scientific
+    rules (n_classes<=10, min class in train>=25) are unchanged.
+n_selected: 40
+datasets:
+  ECG200:
+    name: ECG200
+    source: aeon/load_classification
+    n_train: 100
+    n_test: 100
+    n_channels: 1
+    length: 96
+    n_classes: 2
+    classes:
+    - '-1'
+    - '1'
+    class_counts_train:
+      '-1': 31
+      '1': 69
+    class_counts_test:
+      '-1': 36
+      '1': 64
+    min_class_count_train: 31
+    class_balance_train: 0.4492753623188406
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: e4911ac7f1097325df1873cd0a729c7f15cb94cc83e5d92d2f1d2dc684b1b0f3
+    sha256_y_train: 931fe0c5bd64fa3517342fe813b42be8d84b6f9475afb2702c1bf25c0f062da4
+    sha256_X_test: ceb33ef207c2f9b84436334f43420179bf6e8a5b8663e3616c92d61b6986b0b9
+    sha256_y_test: 0bbc71d0f71a7d90c243bc5a86f1cbf70b52ea3e0f1fc8ad0a6b524407319273
+    has_nan: false
+  GunPointAgeSpan:
+    name: GunPointAgeSpan
+    source: aeon/load_classification
+    n_train: 135
+    n_test: 316
+    n_channels: 1
+    length: 150
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 68
+      '2': 67
+    class_counts_test:
+      '1': 160
+      '2': 156
+    min_class_count_train: 67
+    class_balance_train: 0.9852941176470589
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: 0d671f363326dfb2f4f4df5d7aaae694799329758314d8a9d2b3a838fef5f91c
+    sha256_y_train: 1b14e34fcbe2742456e6dee921ace6917e4622e350572355dc03d039d1ac2c14
+    sha256_X_test: 17d0a37f3518e2c62ceccc450692ae79dd9a1ec6535ce2b21e6b207dec42fc8b
+    sha256_y_test: ad314c18011f271caa3c12929ed360d36985e8d9194ca33d8c8d99d9f506fae3
+    has_nan: false
+  GunPointMaleVersusFemale:
+    name: GunPointMaleVersusFemale
+    source: aeon/load_classification
+    n_train: 135
+    n_test: 316
+    n_channels: 1
+    length: 150
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 71
+      '2': 64
+    class_counts_test:
+      '1': 166
+      '2': 150
+    min_class_count_train: 64
+    class_balance_train: 0.9014084507042254
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: c2c0b06ffac851810fa55bc100967836be980ae5270c09429832d6d1d7952426
+    sha256_y_train: 66008c56aaef6744e34ba3e56a17b6f1e5be47db22553e24adceb92a12639a97
+    sha256_X_test: 0f33a8936dabf21d43370f2df88688477576abb3d3a9dc6214cfaef12e516303
+    sha256_y_test: 788579277f0fcd2f49d5aabdc2b2fdfa7c5a94b7ab0f4560661518abf4696ab7
+    has_nan: false
+  Ham:
+    name: Ham
+    source: aeon/load_classification
+    n_train: 109
+    n_test: 105
+    n_channels: 1
+    length: 431
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 52
+      '2': 57
+    class_counts_test:
+      '1': 51
+      '2': 54
+    min_class_count_train: 52
+    class_balance_train: 0.9122807017543859
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: d858ef64c560784668d33f6c946112a3ccec85340adafb4e2a2eb8b05f8935fe
+    sha256_y_train: 835201e19491f8530ab090eb1a2bebf7a457982e52dbc484a972d0358bdf903c
+    sha256_X_test: 59c26f20d5175d8b85443df2922d8c20fe4121ea8330dbae9b0df879d919a0e6
+    sha256_y_test: dc6a62762224ee4592f284da10fe1d58c1eb9eeca3e7677d7dff75d94947d274
+    has_nan: false
+  Strawberry:
+    name: Strawberry
+    source: aeon/load_classification
+    n_train: 613
+    n_test: 370
+    n_channels: 1
+    length: 235
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 219
+      '2': 394
+    class_counts_test:
+      '1': 132
+      '2': 238
+    min_class_count_train: 219
+    class_balance_train: 0.5558375634517766
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 27430f0d9272a2daa9ad8e49b7f1bb48195863d4a5dd473e6f132ab309b1af9f
+    sha256_y_train: 4cd450bb3dacdaf6cbaf34f1964dac1a1d27fa24e6f2ee49e1d3045e18d90633
+    sha256_X_test: aeedcfb02cbbf4f8ad239f5b77b1eced2caff370d0f50bebc0ce8c02d93c80c0
+    sha256_y_test: ce8e3adcc946dc3fb80d7f7e67ea6736ec3b0b2a56732e0ab836df3db0d95387
+    has_nan: false
+  Wine:
+    name: Wine
+    source: aeon/load_classification
+    n_train: 57
+    n_test: 54
+    n_channels: 1
+    length: 234
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 30
+      '2': 27
+    class_counts_test:
+      '1': 27
+      '2': 27
+    min_class_count_train: 27
+    class_balance_train: 0.9
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: d8c7bcef955710e186104ea715746a6ea7ccd0c588fe71c9bb01850c1d38ba02
+    sha256_y_train: 86f5d162b8227faba6507ca3c5fc347a4e85d0f926ccdc5605a3605c58a521dc
+    sha256_X_test: 482d3c5fef083d9218ebe1febe67290cb6174049f634d70696dd4f9f4077506a
+    sha256_y_test: 24b6c7a1a1c97ec8374b04334aedb3e17b36dd696ea5b8ea6f6ad12897f30969
+    has_nan: false
+  DistalPhalanxOutlineCorrect:
+    name: DistalPhalanxOutlineCorrect
+    source: aeon/load_classification
+    n_train: 600
+    n_test: 276
+    n_channels: 1
+    length: 80
+    n_classes: 2
+    classes:
+    - '0'
+    - '1'
+    class_counts_train:
+      '0': 222
+      '1': 378
+    class_counts_test:
+      '0': 115
+      '1': 161
+    min_class_count_train: 222
+    class_balance_train: 0.5873015873015873
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 634fc67335fe97f4c56aef0a875dfd8efbdbbea0160909b5b567268b74858d69
+    sha256_y_train: 18001d0ad7510bc4b716cc2a9033dbaa9cce7d1d1b678bb8e69da857d2efaaad
+    sha256_X_test: 4d41d798ed03980841982b80640068e9993f7f31b606348dccecf0d2a36ce8e1
+    sha256_y_test: 21af070329f0d05d82a03cef12d1080c9a57923dcb7fd93cd8acc120f037ea77
+    has_nan: false
+  DistalPhalanxOutlineAgeGroup:
+    name: DistalPhalanxOutlineAgeGroup
+    source: aeon/load_classification
+    n_train: 400
+    n_test: 139
+    n_channels: 1
+    length: 80
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 30
+      '2': 113
+      '3': 257
+    class_counts_test:
+      '1': 15
+      '2': 59
+      '3': 65
+    min_class_count_train: 30
+    class_balance_train: 0.11673151750972763
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 610bb5e9a94aa91fdffa13d33e99c7cf22167de179b5daf3b60fa1ee0707b2a4
+    sha256_y_train: acabbebeada5b740b5261c0e45f1edac9c28f130ceffbdc6c09bd00fcf65483f
+    sha256_X_test: 5ade6e7a32c5ec6250223f6f11223370b7544de7dc134180b0ad766bfd959d72
+    sha256_y_test: 9e0847ec1cf9b8441122eba5ab5487beb9723eb816c533c3abbfd7c9177ca34b
+    has_nan: false
+  MiddlePhalanxOutlineCorrect:
+    name: MiddlePhalanxOutlineCorrect
+    source: aeon/load_classification
+    n_train: 600
+    n_test: 291
+    n_channels: 1
+    length: 80
+    n_classes: 2
+    classes:
+    - '0'
+    - '1'
+    class_counts_train:
+      '0': 212
+      '1': 388
+    class_counts_test:
+      '0': 125
+      '1': 166
+    min_class_count_train: 212
+    class_balance_train: 0.5463917525773195
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 0f06f1a6e376d11b5442b2a77f02a04db26688b5b6a89e60c710961d741cc475
+    sha256_y_train: f724171366e5de515a9650b09d464582cf15e71876d8ec805ebf1b7aebd8927e
+    sha256_X_test: 77ef6df3855dda2e4121c65690510741f81c16b073e8e55591845d946b8a6a7c
+    sha256_y_test: bba95e42341b9ebd22f40a90cff6ff241eb84b8f6d0b25fb4c73d968bec1fce9
+    has_nan: false
+  MiddlePhalanxOutlineAgeGroup:
+    name: MiddlePhalanxOutlineAgeGroup
+    source: aeon/load_classification
+    n_train: 400
+    n_test: 154
+    n_channels: 1
+    length: 80
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 55
+      '2': 108
+      '3': 237
+    class_counts_test:
+      '1': 37
+      '2': 88
+      '3': 29
+    min_class_count_train: 55
+    class_balance_train: 0.2320675105485232
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: ee22b266db087a34c2fc6282b48c35ac0f9fbe8423ce14521b5972c5b3db95ab
+    sha256_y_train: f2e556bfb0fc06c7bc5566a408cf6ed9cd22d97a856700365db90be3f5a8fdbc
+    sha256_X_test: 350c029664bc2e4622f693ec7912f6ad099ff75c000aaf5fc91de1dec2dec278
+    sha256_y_test: b00c5d5b1b50b0b7b029ceaf7a2a1077be0dd377a944eab4611f730f0f129eed
+    has_nan: false
+  ProximalPhalanxOutlineCorrect:
+    name: ProximalPhalanxOutlineCorrect
+    source: aeon/load_classification
+    n_train: 600
+    n_test: 291
+    n_channels: 1
+    length: 80
+    n_classes: 2
+    classes:
+    - '0'
+    - '1'
+    class_counts_train:
+      '0': 194
+      '1': 406
+    class_counts_test:
+      '0': 92
+      '1': 199
+    min_class_count_train: 194
+    class_balance_train: 0.47783251231527096
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 41af1036cc8004af9e91af4a9d21af4319b2f8645b4df534899480047816b33b
+    sha256_y_train: 4bc6b9af8bbfbb103385955d4e8a2de90400c9b40651b6c21dda23841e93a2fc
+    sha256_X_test: a43810757d19e9b1f6a00b2532b5c7f3cc8f1256c1d8f733e61864c3243313f8
+    sha256_y_test: 86c633e04eef2f7de8f634399b243ecbb61cdef35e3acab145875d501286b2de
+    has_nan: false
+  ProximalPhalanxOutlineAgeGroup:
+    name: ProximalPhalanxOutlineAgeGroup
+    source: aeon/load_classification
+    n_train: 400
+    n_test: 205
+    n_channels: 1
+    length: 80
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 72
+      '2': 139
+      '3': 189
+    class_counts_test:
+      '1': 17
+      '2': 88
+      '3': 100
+    min_class_count_train: 72
+    class_balance_train: 0.38095238095238093
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: b8783ed8cdee35a4057af7bf823cf7a0406714b3c6dddead86cb80176151ddb0
+    sha256_y_train: 3325bebcb720ffed9661190a745ed9bf4db8f65c49a5a0606bd90037423def4b
+    sha256_X_test: 2f2bc969f050b39022799cb6b9aa5b93934af7429c04fd585967e0af380f4c9a
+    sha256_y_test: b49d73d953d53250ce60c84bd59e5368bbaa68f58adbdfeb39f0b844fa7272fb
+    has_nan: false
+  SyntheticControl:
+    name: SyntheticControl
+    source: aeon/load_classification
+    n_train: 300
+    n_test: 300
+    n_channels: 1
+    length: 60
+    n_classes: 6
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    class_counts_train:
+      '1': 50
+      '2': 50
+      '3': 50
+      '4': 50
+      '5': 50
+      '6': 50
+    class_counts_test:
+      '1': 50
+      '2': 50
+      '3': 50
+      '4': 50
+      '5': 50
+      '6': 50
+    min_class_count_train: 50
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: dbe90c453a8175abd39be597c77a268f9d4a48b6926635795dce7f2126c3f51c
+    sha256_y_train: 0e66a697bd20f48b51405f287a7c1a0fee3643d5d3cb8c1f386a159d20c2ed2a
+    sha256_X_test: 3ff15c5f7bd00e9676e21afe0262919eab882c46940ad52bae2206fff18c6e74
+    sha256_y_test: 0e66a697bd20f48b51405f287a7c1a0fee3643d5d3cb8c1f386a159d20c2ed2a
+    has_nan: false
+  ItalyPowerDemand:
+    name: ItalyPowerDemand
+    source: aeon/load_classification
+    n_train: 67
+    n_test: 1029
+    n_channels: 1
+    length: 24
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 34
+      '2': 33
+    class_counts_test:
+      '1': 513
+      '2': 516
+    min_class_count_train: 33
+    class_balance_train: 0.9705882352941176
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 7c43abca853a0c58eef4fc25565f215e58472b38128ba6df77075c7f4b845286
+    sha256_y_train: aa2a8171c02c284456a90c27b772a240de69d21931e9b8dc49c57c216f1745b2
+    sha256_X_test: 187a59c5f599366838c52747cd05b376b7ac90fe33536de28ec0e7fd9ede1339
+    sha256_y_test: b824f922125672b07fb9ff132858c099df0bde2586f4b103c2107f9864fcc9dc
+    has_nan: false
+  Herring:
+    name: Herring
+    source: aeon/load_classification
+    n_train: 64
+    n_test: 64
+    n_channels: 1
+    length: 512
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 39
+      '2': 25
+    class_counts_test:
+      '1': 38
+      '2': 26
+    min_class_count_train: 25
+    class_balance_train: 0.6410256410256411
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 307afdbd14a7bce6f02eacbf3f7c770816053d62d7f9fcb8b7fbae7963bd3594
+    sha256_y_train: 80c03bb12009c7713a9769629ca5f608016acd3797735858068ff2fb933463fe
+    sha256_X_test: 34af51a8c817277a41ae54aaa057d19d4cd6d7e19d62cc5bc67096468597c636
+    sha256_y_test: f3a66f799df41547dadd1425aa771854889efaeba6b1ae0a04e5498f5dbb7d4e
+    has_nan: false
+  PowerCons:
+    name: PowerCons
+    source: aeon/load_classification
+    n_train: 180
+    n_test: 180
+    n_channels: 1
+    length: 144
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 90
+      '2': 90
+    class_counts_test:
+      '1': 90
+      '2': 90
+    min_class_count_train: 90
+    class_balance_train: 1.0
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: 9b15511bc5324ca63183421bd50eaba3ce21798dfef2f2d36709d0c02bca46b0
+    sha256_y_train: 38af2feda88774dfb4ab6c5b07661eada34abe18b7bc4988f28a5a08ce3fce1c
+    sha256_X_test: 782c4d27d4f92b46aac4a10d292064406d86b553bf4ffed2b8667d78a8fdc9c4
+    sha256_y_test: 38af2feda88774dfb4ab6c5b07661eada34abe18b7bc4988f28a5a08ce3fce1c
+    has_nan: false
+  Wafer:
+    name: Wafer
+    source: aeon/load_classification
+    n_train: 1000
+    n_test: 6164
+    n_channels: 1
+    length: 152
+    n_classes: 2
+    classes:
+    - '-1'
+    - '1'
+    class_counts_train:
+      '-1': 97
+      '1': 903
+    class_counts_test:
+      '-1': 665
+      '1': 5499
+    min_class_count_train: 97
+    class_balance_train: 0.10741971207087486
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: af6ab4fa3ccfcd56cf5026600a0ce3eb3ab2295140a2a3bf9691ba64a5511e29
+    sha256_y_train: 57f0880c5f537bd900fa1f4e4dd9d13379b585824d38c432bbd62c4c35bff9da
+    sha256_X_test: 0d7e68f5563b9e76115235b00ba0fd06c48de88c535fec5b549da824d875390c
+    sha256_y_test: 54970806680b2983d1edca8321d3bca309cf783e74c83bf3363f07585d54e9b9
+    has_nan: false
+  Earthquakes:
+    name: Earthquakes
+    source: aeon/load_classification
+    n_train: 322
+    n_test: 139
+    n_channels: 1
+    length: 512
+    n_classes: 2
+    classes:
+    - '0'
+    - '1'
+    class_counts_train:
+      '0': 264
+      '1': 58
+    class_counts_test:
+      '0': 104
+      '1': 35
+    min_class_count_train: 58
+    class_balance_train: 0.2196969696969697
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 1ec370c1ac950365515e27fc15f030e7dfb3ca94a85d42d81b5d85a691ce7282
+    sha256_y_train: 07918ffd89f684db529d7f654fd39ced2f7723fd22fcde30b935628c1768d430
+    sha256_X_test: 5bf169685c85a17275e974814d0b0a0f690c98c3c56e4fd9f19571df076e5cda
+    sha256_y_test: 4edea790048ebefc651ff189c87afca350375d2a9099cc64bb7f560d43eed237
+    has_nan: false
+  ChlorineConcentration:
+    name: ChlorineConcentration
+    source: aeon/load_classification
+    n_train: 467
+    n_test: 3840
+    n_channels: 1
+    length: 166
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 114
+      '2': 91
+      '3': 262
+    class_counts_test:
+      '1': 886
+      '2': 909
+      '3': 2045
+    min_class_count_train: 91
+    class_balance_train: 0.3473282442748092
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: fe055a22114041a8c671777ad491231a92347a1179e5924810ce02546180522d
+    sha256_y_train: c11f409008b150827924aa51635359a9a100e5ef5ff058dd1d73ae4e31fc4fdd
+    sha256_X_test: 9a777fe943afdf48c4025c9cc2972deab36695f35e02bed8d23c6cdab7212045
+    sha256_y_test: 5c76fa7e42d005d622619853d984029c69a6cc54d665b788f206f9edb5ea2415
+    has_nan: false
+  Computers:
+    name: Computers
+    source: aeon/load_classification
+    n_train: 250
+    n_test: 250
+    n_channels: 1
+    length: 720
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 125
+      '2': 125
+    class_counts_test:
+      '1': 125
+      '2': 125
+    min_class_count_train: 125
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 8cff92024b593f90ad2e9a9da8bc4970268c5bd8ab5fc692bd6328137ea4523b
+    sha256_y_train: d81ccdfb9b49507501a58d969f802c20697833eb1449098032bbfc875b2b9ca5
+    sha256_X_test: 732fd6f6df8d163d7a9e30461971fed928a2be967690c7dd7f5f834e5eff4fd0
+    sha256_y_test: d81ccdfb9b49507501a58d969f802c20697833eb1449098032bbfc875b2b9ca5
+    has_nan: false
+  EthanolLevel:
+    name: EthanolLevel
+    source: aeon/load_classification
+    n_train: 504
+    n_test: 500
+    n_channels: 1
+    length: 1751
+    n_classes: 4
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    class_counts_train:
+      '1': 126
+      '2': 126
+      '3': 126
+      '4': 126
+    class_counts_test:
+      '1': 126
+      '2': 124
+      '3': 126
+      '4': 124
+    min_class_count_train: 126
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 035d4cc64c268111d0699d1c7428b77148a07509eea99e72ec19cd7f3cf74e7e
+    sha256_y_train: 8ca2dae8a3d0dd3e045e7f4bd26508f7b9020e7b956e61e2ecf9ade251646c9e
+    sha256_X_test: dffa9e062660b0b2af0028129bceb6c418e265866fc3b1a4fb56e805589089a6
+    sha256_y_test: 20befa5c43c583ee5c48b9278bcd58714d83ce94a7d12c3d72e1c56f102a658f
+    has_nan: false
+  FreezerRegularTrain:
+    name: FreezerRegularTrain
+    source: aeon/load_classification
+    n_train: 150
+    n_test: 2850
+    n_channels: 1
+    length: 301
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 75
+      '2': 75
+    class_counts_test:
+      '1': 1425
+      '2': 1425
+    min_class_count_train: 75
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 6ffe1eb7f6cb7433896893a7142032b8bdefc5e1373665f5b2c576b84e0991c2
+    sha256_y_train: 99c3c7495ba0d5aebd6cad3608c75e027e0b1cb79a98cd31017700bf63de43bc
+    sha256_X_test: 45c88934ce2213328c0e237f6f5448788f60e56d0d438ef7c4cae45f281ed4fa
+    sha256_y_test: eac6d0e4c76f06cf0d4fcfb1a2a72aa9dad2d995718eb89b4fa4f79b023ef0a2
+    has_nan: false
+  GunPointOldVersusYoung:
+    name: GunPointOldVersusYoung
+    source: aeon/load_classification
+    n_train: 136
+    n_test: 315
+    n_channels: 1
+    length: 150
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 65
+      '2': 71
+    class_counts_test:
+      '1': 150
+      '2': 165
+    min_class_count_train: 65
+    class_balance_train: 0.9154929577464789
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: bdee11e35d7c06913995c52dc500ce310f9ceef6f62ddeae1e950318e93ab9f4
+    sha256_y_train: b05ce919281e7a23e251cd20f410aedd9353ceaf36f66cf329c4ae011b0996eb
+    sha256_X_test: 55ba5198f9cd3f22b18d401735cc04c73ba1cca4f15b186ed6a7ad57c5c38ab5
+    sha256_y_test: 35065afb35d84d72003e4bfad2f2af2f0375969b4580d02b43c037e1e407128d
+    has_nan: false
+  LargeKitchenAppliances:
+    name: LargeKitchenAppliances
+    source: aeon/load_classification
+    n_train: 375
+    n_test: 375
+    n_channels: 1
+    length: 720
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 125
+      '2': 125
+      '3': 125
+    class_counts_test:
+      '1': 125
+      '2': 125
+      '3': 125
+    min_class_count_train: 125
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: e970abc93d0d029f24c336ff4dc9f9923d82f452eb569b9a57138b8c26ef90c5
+    sha256_y_train: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    sha256_X_test: aa9e9a2aa73e81e298ed1fe11b34c14571101dbe473f0e6ccdc40878b8ebe508
+    sha256_y_test: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    has_nan: false
+  MiddlePhalanxTW:
+    name: MiddlePhalanxTW
+    source: aeon/load_classification
+    n_train: 399
+    n_test: 154
+    n_channels: 1
+    length: 80
+    n_classes: 6
+    classes:
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    class_counts_train:
+      '3': 57
+      '4': 84
+      '5': 43
+      '6': 30
+      '7': 25
+      '8': 160
+    class_counts_test:
+      '3': 25
+      '4': 44
+      '5': 23
+      '6': 11
+      '7': 9
+      '8': 42
+    min_class_count_train: 25
+    class_balance_train: 0.15625
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 6e5ab4d208a6a02ab99c4be70d55f7fb760c70157a96ad466de009e6d1bd6423
+    sha256_y_train: bfa7c2616969283ea49cc82d7a96271e792e98d836d18cdd4b969c7f9b1fc552
+    sha256_X_test: 9eadcf13a75badaae06a3fb487fb1d2417ba291e779c9131903f917cacb8383f
+    sha256_y_test: 9e26f14829460ff35afcbd7d5008fe8f42f3dd75ca69dfa73c35d3b917e989a4
+    has_nan: false
+  MixedShapesRegularTrain:
+    name: MixedShapesRegularTrain
+    source: aeon/load_classification
+    n_train: 500
+    n_test: 2425
+    n_channels: 1
+    length: 1024
+    n_classes: 5
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    class_counts_train:
+      '1': 100
+      '2': 100
+      '3': 100
+      '4': 100
+      '5': 100
+    class_counts_test:
+      '1': 458
+      '2': 654
+      '3': 418
+      '4': 581
+      '5': 314
+    min_class_count_train: 100
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 7f203dd88a8aff47c7e4718b689547ae42aeb69a181481955b382ef8d577edbc
+    sha256_y_train: 45d6a389dd35a961a4a800c57c43eb465da132b8117e6042f248fd1ce8df5aec
+    sha256_X_test: 557806fccb32eac03f8c34302e57843dfc0cf83704cba4446de217864ba8088f
+    sha256_y_test: 8c35b2839653d7acf2b16f0cd295da1108b1aa0974e18eba1cfd49ccc013fa32
+    has_nan: false
+  RefrigerationDevices:
+    name: RefrigerationDevices
+    source: aeon/load_classification
+    n_train: 375
+    n_test: 375
+    n_channels: 1
+    length: 720
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 125
+      '2': 125
+      '3': 125
+    class_counts_test:
+      '1': 125
+      '2': 125
+      '3': 125
+    min_class_count_train: 125
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 03ffa4e5ad63b1058730440cad6e44da7dc40bd61463d0155b283146816ee907
+    sha256_y_train: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    sha256_X_test: 331c6305ad0bb94c28fbdbd77fd4ffe34a3526e70e89753efb93d50876c5cb0e
+    sha256_y_test: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    has_nan: false
+  ScreenType:
+    name: ScreenType
+    source: aeon/load_classification
+    n_train: 375
+    n_test: 375
+    n_channels: 1
+    length: 720
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 125
+      '2': 125
+      '3': 125
+    class_counts_test:
+      '1': 125
+      '2': 125
+      '3': 125
+    min_class_count_train: 125
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 16c46ba7b35685ee0def33d9d1f8ae98887e633680ddd9cc68891b10226b351f
+    sha256_y_train: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    sha256_X_test: 0996cd2c19e2075ee7e5f3e76664d2db850fa69207c113f3f9bd8eed3f7d7c36
+    sha256_y_test: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    has_nan: false
+  SemgHandGenderCh2:
+    name: SemgHandGenderCh2
+    source: aeon/load_classification
+    n_train: 300
+    n_test: 600
+    n_channels: 1
+    length: 1500
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 150
+      '2': 150
+    class_counts_test:
+      '1': 390
+      '2': 210
+    min_class_count_train: 150
+    class_balance_train: 1.0
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: 0950b2c3a0533a4f2ba58e200914b85fd5d754305a7f649a5d4045112ffd5bd9
+    sha256_y_train: 674929f3982cf209dd341c9119e2f6147e022d9f899740b44c5e01930a14d937
+    sha256_X_test: b4b39ccdd504aa58d93ea8f6b015d7a813c5df21bfd4de7440c1964e87b96d48
+    sha256_y_test: 627bfbe2a2a702afc2bc06fd960fd4870088c6b9ead49792bc4f99022ca188c6
+    has_nan: false
+  SemgHandMovementCh2:
+    name: SemgHandMovementCh2
+    source: aeon/load_classification
+    n_train: 450
+    n_test: 450
+    n_channels: 1
+    length: 1500
+    n_classes: 6
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    class_counts_train:
+      '1': 75
+      '2': 75
+      '3': 75
+      '4': 75
+      '5': 75
+      '6': 75
+    class_counts_test:
+      '1': 75
+      '2': 75
+      '3': 75
+      '4': 75
+      '5': 75
+      '6': 75
+    min_class_count_train: 75
+    class_balance_train: 1.0
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: c8e501f1166c6a4ff0f5d8e89cc36d6db7e9ef612a28957c5961839ad082f941
+    sha256_y_train: 75fc56028b97a300e832dd67d6efc28efa312599d8cd1c3ded05b03374e6874e
+    sha256_X_test: b2a65ef9e47c40b7f6238f2a5b358fa5026bb7327f24b99a48a224a79ac0261e
+    sha256_y_test: 75fc56028b97a300e832dd67d6efc28efa312599d8cd1c3ded05b03374e6874e
+    has_nan: false
+  SemgHandSubjectCh2:
+    name: SemgHandSubjectCh2
+    source: aeon/load_classification
+    n_train: 450
+    n_test: 450
+    n_channels: 1
+    length: 1500
+    n_classes: 5
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    class_counts_train:
+      '1': 90
+      '2': 90
+      '3': 90
+      '4': 90
+      '5': 90
+    class_counts_test:
+      '1': 90
+      '2': 90
+      '3': 90
+      '4': 90
+      '5': 90
+    min_class_count_train: 90
+    class_balance_train: 1.0
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: e972b1abc732fa07b149a5fc04b858275c46f64656cc90efd5a6876eae5e6529
+    sha256_y_train: f17c0666a95ec15f3bf7b732ae066c012198f0b98435883f8ef416a7d724e4e1
+    sha256_X_test: 409298912311a7a67a80819d2317608d30f493cd09f8d48780b72b011b251370
+    sha256_y_test: f17c0666a95ec15f3bf7b732ae066c012198f0b98435883f8ef416a7d724e4e1
+    has_nan: false
+  SmallKitchenAppliances:
+    name: SmallKitchenAppliances
+    source: aeon/load_classification
+    n_train: 375
+    n_test: 375
+    n_channels: 1
+    length: 720
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 125
+      '2': 125
+      '3': 125
+    class_counts_test:
+      '1': 125
+      '2': 125
+      '3': 125
+    min_class_count_train: 125
+    class_balance_train: 1.0
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 359b4904f63f99ae6f047bc11828fd7c0ba24727155a21e3df503e83ad568c25
+    sha256_y_train: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    sha256_X_test: 2e37290419c830430d788f53f44d50ab26ea8c0d6c162652c8aca60db0a373e8
+    sha256_y_test: 39cf36d444c566455d78a726648c45c492ffb5cd9a3f8fa14d727d0d694545ed
+    has_nan: false
+  SmoothSubspace:
+    name: SmoothSubspace
+    source: aeon/load_classification
+    n_train: 150
+    n_test: 150
+    n_channels: 1
+    length: 15
+    n_classes: 3
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    class_counts_train:
+      '1': 50
+      '2': 50
+      '3': 50
+    class_counts_test:
+      '1': 50
+      '2': 50
+      '3': 50
+    min_class_count_train: 50
+    class_balance_train: 1.0
+    znormalized_train: false
+    znormalized_test: false
+    sha256_X_train: 468ab62e8cdcd5b47b65a8097a6c3462cdd4b5c04721ba7ca6d98df2cba63e29
+    sha256_y_train: 9c849d917273d88353dc563f986705ee0bd64f108f5ac6ac8872988bc7734039
+    sha256_X_test: aee0ddd86021440c890761d4c21bf59870d1c95707181ef1b29fb0226471ef89
+    sha256_y_test: 9c849d917273d88353dc563f986705ee0bd64f108f5ac6ac8872988bc7734039
+    has_nan: false
+  TwoPatterns:
+    name: TwoPatterns
+    source: aeon/load_classification
+    n_train: 1000
+    n_test: 4000
+    n_channels: 1
+    length: 128
+    n_classes: 4
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    class_counts_train:
+      '1': 271
+      '2': 237
+      '3': 250
+      '4': 242
+    class_counts_test:
+      '1': 1035
+      '2': 1011
+      '3': 995
+      '4': 959
+    min_class_count_train: 237
+    class_balance_train: 0.8745387453874539
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: cb77bfb448a2beccdcadf0d645f7426f515c7bf29ef532b979744be0faccd611
+    sha256_y_train: 441a733279f069586ef42d2a5d5f5ad43cc949d0a76df96ba1a0d7c80ec0029b
+    sha256_X_test: 4d5d4b78477404774f18f77d45320a3b5dd9384a47e5420898cb22ba878e8068
+    sha256_y_test: 6a098af0b4f87e9a40c8e2bef16034aaac7099bfb028749d5d5420e59cf0b892
+    has_nan: false
+  UWaveGestureLibraryAll:
+    name: UWaveGestureLibraryAll
+    source: aeon/load_classification
+    n_train: 896
+    n_test: 3582
+    n_channels: 1
+    length: 945
+    n_classes: 8
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    class_counts_train:
+      '1': 122
+      '2': 108
+      '3': 106
+      '4': 110
+      '5': 127
+      '6': 111
+      '7': 112
+      '8': 100
+    class_counts_test:
+      '1': 437
+      '2': 452
+      '3': 454
+      '4': 450
+      '5': 433
+      '6': 449
+      '7': 447
+      '8': 460
+    min_class_count_train: 100
+    class_balance_train: 0.7874015748031497
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 94b9b52507a469562b19e4e890d035c5e71a13a316741bd4764084dcd12354c3
+    sha256_y_train: 603d98f0a367e52d9ca2a99210732b3ce5e7db950eed369fff3f862d3cd209ce
+    sha256_X_test: e8aff9fd7ddd121b8c2e593dc0dd7b6e9cb7a3c6b92345a107e6423a16286d79
+    sha256_y_test: bb8509ed35dd1e86f1ff939a9754c0a875563997fd1ba71fd326926f0b91bac7
+    has_nan: false
+  UWaveGestureLibraryX:
+    name: UWaveGestureLibraryX
+    source: aeon/load_classification
+    n_train: 896
+    n_test: 3582
+    n_channels: 1
+    length: 315
+    n_classes: 8
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    class_counts_train:
+      '1': 122
+      '2': 108
+      '3': 106
+      '4': 110
+      '5': 127
+      '6': 111
+      '7': 112
+      '8': 100
+    class_counts_test:
+      '1': 437
+      '2': 452
+      '3': 454
+      '4': 450
+      '5': 433
+      '6': 449
+      '7': 447
+      '8': 460
+    min_class_count_train: 100
+    class_balance_train: 0.7874015748031497
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 73089e53d151fd8d362737a634d632882233550393a5b82594c478891e9d3e66
+    sha256_y_train: 603d98f0a367e52d9ca2a99210732b3ce5e7db950eed369fff3f862d3cd209ce
+    sha256_X_test: f0efdf86fa4519a68d58adc0de5a4913bb86b4d921ca911b93cd2ab6f1a73f64
+    sha256_y_test: bb8509ed35dd1e86f1ff939a9754c0a875563997fd1ba71fd326926f0b91bac7
+    has_nan: false
+  UWaveGestureLibraryY:
+    name: UWaveGestureLibraryY
+    source: aeon/load_classification
+    n_train: 896
+    n_test: 3582
+    n_channels: 1
+    length: 315
+    n_classes: 8
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    class_counts_train:
+      '1': 122
+      '2': 108
+      '3': 106
+      '4': 110
+      '5': 127
+      '6': 111
+      '7': 112
+      '8': 100
+    class_counts_test:
+      '1': 437
+      '2': 452
+      '3': 454
+      '4': 450
+      '5': 433
+      '6': 449
+      '7': 447
+      '8': 460
+    min_class_count_train: 100
+    class_balance_train: 0.7874015748031497
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: e8ee08934ea2a37956d00aa029a5beaca06ca7bb63787375e65db95a3f197809
+    sha256_y_train: 603d98f0a367e52d9ca2a99210732b3ce5e7db950eed369fff3f862d3cd209ce
+    sha256_X_test: 1e44302d1cfe4b11a9b84f457a6a98fb002982dff30ca1aaeb320ac044eb68fd
+    sha256_y_test: bb8509ed35dd1e86f1ff939a9754c0a875563997fd1ba71fd326926f0b91bac7
+    has_nan: false
+  UWaveGestureLibraryZ:
+    name: UWaveGestureLibraryZ
+    source: aeon/load_classification
+    n_train: 896
+    n_test: 3582
+    n_channels: 1
+    length: 315
+    n_classes: 8
+    classes:
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    class_counts_train:
+      '1': 122
+      '2': 108
+      '3': 106
+      '4': 110
+      '5': 127
+      '6': 111
+      '7': 112
+      '8': 100
+    class_counts_test:
+      '1': 437
+      '2': 452
+      '3': 454
+      '4': 450
+      '5': 433
+      '6': 449
+      '7': 447
+      '8': 460
+    min_class_count_train: 100
+    class_balance_train: 0.7874015748031497
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 2c54e5635b39d6cc03479997d00c9c10558c5aa69a59725a2f807ffa00e4a1a1
+    sha256_y_train: 603d98f0a367e52d9ca2a99210732b3ce5e7db950eed369fff3f862d3cd209ce
+    sha256_X_test: 68d31bce500728f5d0ff26477842707bcba451f28ee99105fb0c524b85690d73
+    sha256_y_test: bb8509ed35dd1e86f1ff939a9754c0a875563997fd1ba71fd326926f0b91bac7
+    has_nan: false
+  WormsTwoClass:
+    name: WormsTwoClass
+    source: aeon/load_classification
+    n_train: 181
+    n_test: 77
+    n_channels: 1
+    length: 900
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 76
+      '2': 105
+    class_counts_test:
+      '1': 33
+      '2': 44
+    min_class_count_train: 76
+    class_balance_train: 0.7238095238095238
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: 531630cea53847992b0b41ebc85f498926c307f65ff3ca5cb2fc84e92b78ed72
+    sha256_y_train: 72ca0f17d09f0ab5e34e4e5b5f50b2cafd14c9be2d4bc70c1c26c2a674d66433
+    sha256_X_test: d51f640790063281ecc2ee8c48ca1ec79bc0b846acdcc3175401082f809af076
+    sha256_y_test: 583d33cbf1125b291dbe6aaddf3e415c651a926e5dee3eae6afa84d3144a1017
+    has_nan: false
+  Yoga:
+    name: Yoga
+    source: aeon/load_classification
+    n_train: 300
+    n_test: 3000
+    n_channels: 1
+    length: 426
+    n_classes: 2
+    classes:
+    - '1'
+    - '2'
+    class_counts_train:
+      '1': 137
+      '2': 163
+    class_counts_test:
+      '1': 1393
+      '2': 1607
+    min_class_count_train: 137
+    class_balance_train: 0.8404907975460123
+    znormalized_train: true
+    znormalized_test: true
+    sha256_X_train: beb0603e4a40747d2c52568cc8115315ecd8697668f0c94407ea6444bdde7574
+    sha256_y_train: 32b9f579fbdc4c1c53b6a34d0348750945f6e9016c482f0fe29ba5f6ae629b84
+    sha256_X_test: 76f08158693c34b028d571b15b35dccbb5bbad7224eec15c23e6425b9ab9bedf
+    sha256_y_test: 24d1ede3fd968991d2d2101725b57f098d944017008fc1adffbf96e83fc2068c
+    has_nan: false
+rejected:
+  ECGFiveDays: smallest training class has 9 < 25
+  TwoLeadECG: smallest training class has 11 < 25
+  GunPoint: smallest training class has 24 < 25
+  Coffee: smallest training class has 14 < 25
+  Beef: smallest training class has 6 < 25
+  Meat: smallest training class has 20 < 25
+  ArrowHead: smallest training class has 12 < 25
+  DistalPhalanxTW: smallest training class has 18 < 25
+  ProximalPhalanxTW: smallest training class has 16 < 25
+  Car: smallest training class has 11 < 25
+  Plane: smallest training class has 9 < 25
+  Trace: smallest training class has 21 < 25
+  MoteStrain: smallest training class has 10 < 25
+  SonyAIBORobotSurface1: smallest training class has 6 < 25
+  SonyAIBORobotSurface2: smallest training class has 11 < 25
+  Lightning2: smallest training class has 20 < 25
+  Lightning7: smallest training class has 5 < 25
+  FaceFour: smallest training class has 3 < 25
+  OSULeaf: smallest training class has 15 < 25
+  Symbols: smallest training class has 3 < 25
+  SwedishLeaf: n_classes=15 > 10
+  Fish: smallest training class has 21 < 25
+  BirdChicken: smallest training class has 10 < 25
+  BeetleFly: smallest training class has 10 < 25
+  ToeSegmentation1: smallest training class has 20 < 25
+  ToeSegmentation2: smallest training class has 18 < 25
+  Chinatown: smallest training class has 10 < 25
+  FreezerSmallTrain: smallest training class has 14 < 25
+  ACSF1: smallest training class has 10 < 25
+  Adiac: n_classes=37 > 10
+  BME: smallest training class has 10 < 25
+  CBF: smallest training class has 8 < 25
+  CinCECGTorso: smallest training class has 5 < 25
+  CricketX: n_classes=12 > 10
+  CricketY: n_classes=12 > 10
+  CricketZ: n_classes=12 > 10
+  Crop: n_train=7200 > 1500
+  DiatomSizeReduction: smallest training class has 1 < 25
+  ECG5000: smallest training class has 2 < 25
+  EOGHorizontalSignal: n_classes=12 > 10
+  EOGVerticalSignal: n_classes=12 > 10
+  ElectricDevices: n_train=8926 > 1500
+  FaceAll: n_classes=14 > 10
+  FacesUCR: n_classes=14 > 10
+  FiftyWords: n_classes=50 > 10
+  FordA: n_train=3601 > 1500
+  FordB: n_train=3636 > 1500
+  HandOutlines: length=2709 > 2000
+  Haptics: smallest training class has 18 < 25
+  HouseTwenty: smallest training class has 20 < 25
+  InlineSkate: smallest training class has 9 < 25
+  InsectEPGRegularTrain: smallest training class has 10 < 25
+  InsectEPGSmallTrain: smallest training class has 3 < 25
+  InsectWingbeatSound: n_classes=11 > 10
+  Mallat: smallest training class has 2 < 25
+  MedicalImages: smallest training class has 6 < 25
+  MixedShapesSmallTrain: smallest training class has 20 < 25
+  NonInvasiveFetalECGThorax1: n_train=1800 > 1500
+  NonInvasiveFetalECGThorax2: n_train=1800 > 1500
+  OliveOil: smallest training class has 4 < 25
+  PhalangesOutlinesCorrect: n_train=1800 > 1500
+  Phoneme: n_classes=39 > 10
+  PigAirwayPressure: n_classes=52 > 10
+  PigArtPressure: n_classes=52 > 10
+  PigCVP: n_classes=52 > 10
+  Rock: length=2844 > 2000
+  ShapeletSim: smallest training class has 10 < 25
+  ShapesAll: n_classes=60 > 10
+  StarLightCurves: n_train+n_test=9236 > 7500
+  UMD: smallest training class has 12 < 25
+  WordSynonyms: n_classes=25 > 10
+  Worms: smallest training class has 17 < 25

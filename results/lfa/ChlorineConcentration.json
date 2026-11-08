@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 5.642794674971106,
+    "knn_purity_proxy": 0.9776690119302539,
+    "n_features_used": 50.0,
+    "n_samples": 467.0,
+    "sil": 0.40174136403299276,
+    "stab": 0.8245320501086384
+  },
+  "dataset": "ChlorineConcentration",
+  "n_classes": 3,
+  "n_kernels": 10000,
+  "n_train": 467,
+  "seconds": 1.9463135000005423,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

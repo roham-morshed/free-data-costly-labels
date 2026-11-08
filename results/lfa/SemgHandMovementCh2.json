@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 6.522564144671642,
+    "knn_purity_proxy": 0.9123809523809524,
+    "n_features_used": 50.0,
+    "n_samples": 450.0,
+    "sil": 0.33953114065981393,
+    "stab": 0.7472084912714421
+  },
+  "dataset": "SemgHandMovementCh2",
+  "n_classes": 6,
+  "n_kernels": 10000,
+  "n_train": 450,
+  "seconds": 2.0086110000011104,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

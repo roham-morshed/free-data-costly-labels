@@ -1,0 +1,331 @@
+{
+  "cache_bytes": 5066750482,
+  "dtw_window": 0.1,
+  "n_datasets": 40,
+  "n_kernels": 10000,
+  "per_dataset": [
+    {
+      "dataset": "ECG200",
+      "dtw_seconds": 0.7067376999998487,
+      "feature_dim": 9996,
+      "feature_seconds": 0.5933560000003126,
+      "megabytes": 15.29083251953125,
+      "unsup_seconds": 2.9782282999990457
+    },
+    {
+      "dataset": "GunPointAgeSpan",
+      "dtw_seconds": 1.4372853000004397,
+      "feature_dim": 9996,
+      "feature_seconds": 0.12111989999948491,
+      "megabytes": 34.55754089355469,
+      "unsup_seconds": 0.19054279999954815
+    },
+    {
+      "dataset": "GunPointMaleVersusFemale",
+      "dtw_seconds": 1.4405892000004314,
+      "feature_dim": 9996,
+      "feature_seconds": 0.1561436999995749,
+      "megabytes": 34.55754089355469,
+      "unsup_seconds": 0.1779257999996844
+    },
+    {
+      "dataset": "Ham",
+      "dtw_seconds": 3.2071829000001344,
+      "feature_dim": 9996,
+      "feature_seconds": 0.21791290000010122,
+      "megabytes": 16.364032745361328,
+      "unsup_seconds": 0.1438188000001901
+    },
+    {
+      "dataset": "Strawberry",
+      "dtw_seconds": 14.088406200000009,
+      "feature_dim": 9996,
+      "feature_seconds": 0.254105299999992,
+      "megabytes": 75.83216094970703,
+      "unsup_seconds": 1.0744552999999541
+    },
+    {
+      "dataset": "Wine",
+      "dtw_seconds": 0.3002252999999655,
+      "feature_dim": 9996,
+      "feature_seconds": 0.10016780000023573,
+      "megabytes": 8.476982116699219,
+      "unsup_seconds": 0.08958419999953549
+    },
+    {
+      "dataset": "DistalPhalanxOutlineCorrect",
+      "dtw_seconds": 1.673594299999877,
+      "feature_dim": 9996,
+      "feature_seconds": 0.12008300000024974,
+      "megabytes": 67.4384765625,
+      "unsup_seconds": 0.9410201999999117
+    },
+    {
+      "dataset": "DistalPhalanxOutlineAgeGroup",
+      "dtw_seconds": 0.5251829000003454,
+      "feature_dim": 9996,
+      "feature_seconds": 0.08450679999941713,
+      "megabytes": 41.318084716796875,
+      "unsup_seconds": 0.5699225999996997
+    },
+    {
+      "dataset": "MiddlePhalanxOutlineCorrect",
+      "dtw_seconds": 1.5931510000000344,
+      "feature_dim": 9996,
+      "feature_seconds": 0.1300423999996383,
+      "megabytes": 68.61676025390625,
+      "unsup_seconds": 1.0231896999998753
+    },
+    {
+      "dataset": "MiddlePhalanxOutlineAgeGroup",
+      "dtw_seconds": 0.5980623000000378,
+      "feature_dim": 9996,
+      "feature_seconds": 0.11327239999991434,
+      "megabytes": 42.48492431640625,
+      "unsup_seconds": 0.5625749000000724
+    },
+    {
+      "dataset": "ProximalPhalanxOutlineCorrect",
+      "dtw_seconds": 1.7381869000000734,
+      "feature_dim": 9996,
+      "feature_seconds": 0.13441270000021177,
+      "megabytes": 68.61676025390625,
+      "unsup_seconds": 1.026817999999821
+    },
+    {
+      "dataset": "ProximalPhalanxOutlineAgeGroup",
+      "dtw_seconds": 0.9082284000000982,
+      "feature_dim": 9996,
+      "feature_seconds": 0.11987550000003466,
+      "megabytes": 46.452178955078125,
+      "unsup_seconds": 0.6039916999993693
+    },
+    {
+      "dataset": "SyntheticControl",
+      "dtw_seconds": 0.5255382999998801,
+      "feature_dim": 9996,
+      "feature_seconds": 0.1144733000000997,
+      "megabytes": 46.10137939453125,
+      "unsup_seconds": 0.44908119999945484
+    },
+    {
+      "dataset": "ItalyPowerDemand",
+      "dtw_seconds": 0.09328269999969052,
+      "feature_dim": 9996,
+      "feature_seconds": 0.09322039999960907,
+      "megabytes": 83.84771347045898,
+      "unsup_seconds": 0.14601709999988088
+    },
+    {
+      "dataset": "Herring",
+      "dtw_seconds": 1.7180726000001414,
+      "feature_dim": 9996,
+      "feature_seconds": 0.19349919999967824,
+      "megabytes": 9.77734375,
+      "unsup_seconds": 0.10246880000022429
+    },
+    {
+      "dataset": "PowerCons",
+      "dtw_seconds": 0.9344249999999192,
+      "feature_dim": 9996,
+      "feature_seconds": 0.10126390000004903,
+      "megabytes": 27.57843017578125,
+      "unsup_seconds": 0.21151789999976245
+    },
+    {
+      "dataset": "Wafer",
+      "dtw_seconds": 147.87296590000005,
+      "feature_dim": 9996,
+      "feature_seconds": 0.753481599999759,
+      "megabytes": 569.864990234375,
+      "unsup_seconds": 2.3842601999995168
+    },
+    {
+      "dataset": "Earthquakes",
+      "dtw_seconds": 9.342929600000389,
+      "feature_dim": 9996,
+      "feature_seconds": 0.19917909999958283,
+      "megabytes": 35.32817840576172,
+      "unsup_seconds": 0.32732880000003206
+    },
+    {
+      "dataset": "ChlorineConcentration",
+      "dtw_seconds": 34.57535199999984,
+      "feature_dim": 9996,
+      "feature_seconds": 0.3549059999995734,
+      "megabytes": 335.3074035644531,
+      "unsup_seconds": 0.6101492999996481
+    },
+    {
+      "dataset": "Computers",
+      "dtw_seconds": 22.97700410000016,
+      "feature_dim": 9996,
+      "feature_seconds": 0.2361190000001443,
+      "megabytes": 38.37013244628906,
+      "unsup_seconds": 0.26028889999906824
+    },
+    {
+      "dataset": "EthanolLevel",
+      "dtw_seconds": 542.9435399000004,
+      "feature_dim": 9996,
+      "feature_seconds": 0.7663137000008646,
+      "megabytes": 77.52978515625,
+      "unsup_seconds": 0.5303832000008697
+    },
+    {
+      "dataset": "FreezerRegularTrain",
+      "dtw_seconds": 26.658556399999725,
+      "feature_dim": 9996,
+      "feature_seconds": 0.34976089999963733,
+      "megabytes": 230.4210662841797,
+      "unsup_seconds": 0.2518424999980198
+    },
+    {
+      "dataset": "GunPointOldVersusYoung",
+      "dtw_seconds": 0.9843585999997231,
+      "feature_dim": 9996,
+      "feature_seconds": 0.09539979999954085,
+      "megabytes": 34.5582275390625,
+      "unsup_seconds": 0.12125799999921583
+    },
+    {
+      "dataset": "LargeKitchenAppliances",
+      "dtw_seconds": 50.19047409999985,
+      "feature_dim": 9996,
+      "feature_seconds": 0.3054072000013548,
+      "megabytes": 57.734012603759766,
+      "unsup_seconds": 0.36864109999987704
+    },
+    {
+      "dataset": "MiddlePhalanxTW",
+      "dtw_seconds": 0.3343486000003395,
+      "feature_dim": 9996,
+      "feature_seconds": 0.06639419999919483,
+      "megabytes": 42.40807342529297,
+      "unsup_seconds": 0.36193360000015673
+    },
+    {
+      "dataset": "MixedShapesRegularTrain",
+      "dtw_seconds": 821.5365527000004,
+      "feature_dim": 9996,
+      "feature_seconds": 0.9691808999996283,
+      "megabytes": 227.6958465576172,
+      "unsup_seconds": 0.5205952000005709
+    },
+    {
+      "dataset": "RefrigerationDevices",
+      "dtw_seconds": 44.53753999999935,
+      "feature_dim": 9996,
+      "feature_seconds": 0.220885099998668,
+      "megabytes": 57.734012603759766,
+      "unsup_seconds": 0.3465175999999701
+    },
+    {
+      "dataset": "ScreenType",
+      "dtw_seconds": 44.18565630000012,
+      "feature_dim": 9996,
+      "feature_seconds": 0.27366499999880034,
+      "megabytes": 57.734012603759766,
+      "unsup_seconds": 0.34916079999948124
+    },
+    {
+      "dataset": "SemgHandGenderCh2",
+      "dtw_seconds": 248.05137970000033,
+      "feature_dim": 9996,
+      "feature_seconds": 0.5421962999998868,
+      "megabytes": 69.32373046875,
+      "unsup_seconds": 0.2998747999990883
+    },
+    {
+      "dataset": "SemgHandMovementCh2",
+      "dtw_seconds": 288.3477545000005,
+      "feature_dim": 9996,
+      "feature_seconds": 0.5088143000002674,
+      "megabytes": 69.40956115722656,
+      "unsup_seconds": 0.4243907999998555
+    },
+    {
+      "dataset": "SemgHandSubjectCh2",
+      "dtw_seconds": 314.1790581000005,
+      "feature_dim": 9996,
+      "feature_seconds": 0.536796600001253,
+      "megabytes": 69.40956115722656,
+      "unsup_seconds": 0.4953048999987004
+    },
+    {
+      "dataset": "SmallKitchenAppliances",
+      "dtw_seconds": 43.197603499999786,
+      "feature_dim": 9996,
+      "feature_seconds": 0.22018150000076275,
+      "megabytes": 57.734012603759766,
+      "unsup_seconds": 0.32988639999985025
+    },
+    {
+      "dataset": "SmoothSubspace",
+      "dtw_seconds": 0.007290400000783848,
+      "feature_dim": 9996,
+      "feature_seconds": 0.03447109999979148,
+      "megabytes": 22.964859008789062,
+      "unsup_seconds": 0.12324209999951563
+    },
+    {
+      "dataset": "TwoPatterns",
+      "dtw_seconds": 37.54395589999967,
+      "feature_dim": 9996,
+      "feature_seconds": 0.23569709999901534,
+      "megabytes": 396.575927734375,
+      "unsup_seconds": 1.0827372999983709
+    },
+    {
+      "dataset": "UWaveGestureLibraryAll",
+      "dtw_seconds": 1668.8683247,
+      "feature_dim": 9996,
+      "feature_seconds": 1.1989026999999624,
+      "megabytes": 353.75079345703125,
+      "unsup_seconds": 1.0274430000008579
+    },
+    {
+      "dataset": "UWaveGestureLibraryX",
+      "dtw_seconds": 182.51325160000124,
+      "feature_dim": 9996,
+      "feature_seconds": 0.3792907999995805,
+      "megabytes": 353.75079345703125,
+      "unsup_seconds": 0.9617942000004405
+    },
+    {
+      "dataset": "UWaveGestureLibraryY",
+      "dtw_seconds": 182.61324830000012,
+      "feature_dim": 9996,
+      "feature_seconds": 0.382789799999955,
+      "megabytes": 353.75079345703125,
+      "unsup_seconds": 0.9864179999985936
+    },
+    {
+      "dataset": "UWaveGestureLibraryZ",
+      "dtw_seconds": 189.2701319000007,
+      "feature_dim": 9996,
+      "feature_seconds": 0.42453569999815954,
+      "megabytes": 353.75079345703125,
+      "unsup_seconds": 1.0036678000014945
+    },
+    {
+      "dataset": "WormsTwoClass",
+      "dtw_seconds": 7.671886400001313,
+      "feature_dim": 9996,
+      "feature_seconds": 0.16350729999976465,
+      "megabytes": 19.729129791259766,
+      "unsup_seconds": 0.15164410000215867
+    },
+    {
+      "dataset": "Yoga",
+      "dtw_seconds": 101.0917655000012,
+      "feature_dim": 9996,
+      "feature_seconds": 0.42185040000003937,
+      "megabytes": 255.1025390625,
+      "unsup_seconds": 0.361855099999957
+    }
+  ],
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "wall_clock_seconds": 5144.2173066000005
+}

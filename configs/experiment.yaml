@@ -1,0 +1,102 @@
+# ---------------------------------------------------------------------------
+# Master experiment configuration.  Every constant that appears in the paper
+# must be readable from this file (nothing hard-coded in the source).
+# ---------------------------------------------------------------------------
+
+paths:
+  data_cache: data/cache
+  features: features
+  results_raw: results/raw
+  results_lfa: results/lfa
+  results_ablation: results/ablation
+  failures: results/failures
+  tables: paper/tables
+  figures: paper/figures
+
+grid:
+  label_budgets: [1, 2, 5, 10, 20]
+  seeds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  methods:
+    - 1nn_dtw
+    - sup_strict
+    - sup_tf
+    - self_train
+    - label_spread
+    - augment
+    - safe_ssl
+    - safe_ssl_novalve      # ablation arm: identical to safe_ssl with the valve removed (RQ5, T4)
+
+features:
+  transform: minirocket          # minirocket | rocket | multirocket
+  n_kernels: 10000
+  transform_seed: 0              # single transform seed for the cached L u U features (see NOTES.md)
+  dtype: float32
+
+dtw:
+  window: 0.1                    # Sakoe-Chiba band as a fraction of series length; null = full DTW
+
+ridge:
+  alphas_logspace: [-3, 3, 10]   # np.logspace(-3, 3, 10)
+
+logreg:
+  max_iter: 2000
+  C: 1.0
+
+self_train:
+  threshold: 0.75
+  max_iter: 10
+
+label_spread:
+  kernel: knn
+  n_neighbors: 7
+  alpha: 0.2
+  max_iter: 100
+  tol: 1.0e-3
+
+augment:
+  n_copies: 8                    # M
+  jitter_sigma: 0.05
+  scaling_sigma: 0.1
+  warp_n_knots: 4
+  warp_sigma: 0.2
+  slice_ratio: 0.9
+
+safe_ssl:
+  k_neighbors: 7
+  alpha: 0.2
+  rho: 0.25
+  rounds: 2
+  delta: 0.0
+  max_iter: 100
+  tol: 1.0e-3
+  valve_max_folds: 5
+
+lfa:
+  pca_dims: 50
+  kmeans_n_init: 10
+  n_bootstrap: 10
+  bootstrap_frac: 0.8
+  knn_purity_k: 7
+  seed: 0
+
+runtime:
+  n_jobs: -3                     # joblib: cpu_count() - 2
+  verbose: 5
+
+ablation:
+  n_datasets: 15
+  label_budgets: [5, 20]
+  seeds: [0, 1, 2, 3, 4]
+  axes:
+    rho: [0.10, 0.25, 0.50, 1.00]
+    rounds: [1, 2, 4]
+    k_neighbors: [3, 7, 15]
+    alpha: [0.05, 0.20, 0.50]
+    delta: [-0.02, 0.0, 0.02]
+    n_kernels: [2000, 10000]
+    transform: [minirocket, rocket, multirocket]
+
+stats:
+  alpha: 0.05
+  regression_threshold: 0.01     # "worse than sup_tf by more than 1 accuracy point"
+  recovery_min_gap: 0.02         # drop datasets whose ceiling is within this of the floor

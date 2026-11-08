@@ -1,0 +1,1088 @@
+{
+  "datasets": [
+    "ECG200",
+    "GunPointAgeSpan",
+    "GunPointMaleVersusFemale",
+    "Ham",
+    "Strawberry"
+  ],
+  "eval_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "k": 5,
+  "rows": [
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.74,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.77,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.82,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.82,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.72,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.82,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8575949367088608,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.7911392405063291,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9556962025316456,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9556962025316456,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.819620253164557,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.819620253164557,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9082278481012658,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9082278481012658,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9715189873417721,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9715189873417721,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9493670886075949,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9493670886075949,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9556962025316456,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9556962025316456,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9683544303797469,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9462025316455697,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.870253164556962,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.870253164556962,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9620253164556962,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.9588607594936709,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.5142857142857142,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.5142857142857142,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.6476190476190476,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.6476190476190476,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.3904761904761905,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.3904761904761905,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.6666666666666666,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.638095238095238,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.580952380952381,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.580952380952381,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8297297297297297,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8297297297297297,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8108108108108109,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8405405405405405,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8243243243243243,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8243243243243243,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.8621621621621621,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.7675675675675676,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.7243243243243244,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.654054054054054,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 0
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.75,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.78,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.82,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8639240506329114,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.7848101265822784,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9620253164556962,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9620253164556962,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8291139240506329,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8291139240506329,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9208860759493671,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9651898734177216,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9683544303797469,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9683544303797469,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9556962025316456,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9430379746835443,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9556962025316456,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9556962025316456,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9715189873417721,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9588607594936709,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8892405063291139,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8892405063291139,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9525316455696202,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.9525316455696202,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.5333333333333333,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.6285714285714286,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.6095238095238096,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.6095238095238096,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.3904761904761905,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.37142857142857144,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.6952380952380952,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.638095238095238,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.5523809523809524,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.5523809523809524,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8216216216216217,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8216216216216217,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.7621621621621621,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8324324324324325,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8837837837837837,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.8108108108108109,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.7432432432432432,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.7432432432432432,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 1
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.74,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.74,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.81,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.72,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.83,
+      "dataset": "ECG200",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.83,
+      "dataset": "ECG200",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8607594936708861,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.7848101265822784,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9493670886075949,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9493670886075949,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8259493670886076,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8259493670886076,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9113924050632911,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9715189873417721,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9715189873417721,
+      "dataset": "GunPointAgeSpan",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9715189873417721,
+      "dataset": "GunPointAgeSpan",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9493670886075949,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9462025316455697,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9462025316455697,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9462025316455697,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9651898734177216,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9936708860759493,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8575949367088608,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8575949367088608,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9683544303797469,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.9778481012658228,
+      "dataset": "GunPointMaleVersusFemale",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.5238095238095238,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.6285714285714286,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.6,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.6,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.38095238095238093,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.37142857142857144,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.6857142857142857,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.6095238095238096,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.5714285714285714,
+      "dataset": "Ham",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.5714285714285714,
+      "dataset": "Ham",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8243243243243243,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8243243243243243,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 0,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.7594594594594595,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.7594594594594595,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 1,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.7783783783783784,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.7783783783783784,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 2,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8324324324324325,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.8135135135135135,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 3,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.727027027027027,
+      "dataset": "Strawberry",
+      "method": "sup_tf",
+      "seed": 4,
+      "tseed": 2
+    },
+    {
+      "accuracy": 0.727027027027027,
+      "dataset": "Strawberry",
+      "method": "safe_ssl",
+      "seed": 4,
+      "tseed": 2
+    }
+  ],
+  "summary": {
+    "safe_ssl": {
+      "n_datasets": 5,
+      "ratio": 0.11143806098878282,
+      "sd_across_evaluation_seeds": 0.06341777180624959,
+      "sd_across_transform_seeds": 0.007067153522317554
+    },
+    "sup_tf": {
+      "n_datasets": 5,
+      "ratio": 0.08198257317381091,
+      "sd_across_evaluation_seeds": 0.059109121741130956,
+      "sd_across_transform_seeds": 0.004845917898381966
+    }
+  },
+  "transform_seeds": [
+    0,
+    1,
+    2
+  ]
+}

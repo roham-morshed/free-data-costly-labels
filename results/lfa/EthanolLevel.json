@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 4.4563924395996635,
+    "knn_purity_proxy": 0.8356009070294784,
+    "n_features_used": 50.0,
+    "n_samples": 504.0,
+    "sil": 0.1412258781710739,
+    "stab": 0.7374143379298604
+  },
+  "dataset": "EthanolLevel",
+  "n_classes": 4,
+  "n_kernels": 10000,
+  "n_train": 504,
+  "seconds": 2.715307500000563,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

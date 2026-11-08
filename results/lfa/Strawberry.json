@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 5.870613691159931,
+    "knn_purity_proxy": 0.9776275926357493,
+    "n_features_used": 50.0,
+    "n_samples": 613.0,
+    "sil": 0.41506773187662876,
+    "stab": 0.9815932703677777
+  },
+  "dataset": "Strawberry",
+  "n_classes": 2,
+  "n_kernels": 10000,
+  "n_train": 613,
+  "seconds": 8.065790200000265,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

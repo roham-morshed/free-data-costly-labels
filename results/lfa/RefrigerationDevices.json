@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 4.127103563898469,
+    "knn_purity_proxy": 0.9318095238095238,
+    "n_features_used": 50.0,
+    "n_samples": 375.0,
+    "sil": 0.13038200756160884,
+    "stab": 0.8927905397855219
+  },
+  "dataset": "RefrigerationDevices",
+  "n_classes": 3,
+  "n_kernels": 10000,
+  "n_train": 375,
+  "seconds": 1.6993667999995523,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

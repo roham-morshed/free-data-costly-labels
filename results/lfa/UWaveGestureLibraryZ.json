@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 5.335181622049401,
+    "knn_purity_proxy": 0.8220663265306123,
+    "n_features_used": 50.0,
+    "n_samples": 896.0,
+    "sil": 0.15980471717953731,
+    "stab": 0.6970192479750088
+  },
+  "dataset": "UWaveGestureLibraryZ",
+  "n_classes": 8,
+  "n_kernels": 10000,
+  "n_train": 896,
+  "seconds": 2.024571100000685,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

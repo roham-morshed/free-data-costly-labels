@@ -1,0 +1,18 @@
+# Pinned to the exact versions used to produce every number in the paper.
+# Recorded automatically in results/*/*.json via tscfree.utils.package_versions().
+aeon==1.5.0
+scikit-learn==1.8.0
+numpy==2.3.5
+scipy==1.17.1
+pandas==2.3.3
+pyarrow==25.0.1
+matplotlib==3.11.1
+PyYAML==6.0.3
+tqdm==4.70.0
+joblib==1.5.3
+numba==0.63.1
+# dev
+pytest==9.1.1
+ruff==0.16.4
+# optional deep baseline (§12) -- install separately, CPU or CUDA build
+# torch>=2.0

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+data/cache/
+features/
+results/raw/
+results/ablation/
+results/deep/
+results/_smoke/
+results/_estimate/
+results/_transform_seed_check/
+data/_raw/
+results/*.parquet
+results/*.csv
+.pytest_cache/
+.ruff_cache/

@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 4.170090883187496,
+    "knn_purity_proxy": 0.98,
+    "n_features_used": 50.0,
+    "n_samples": 150.0,
+    "sil": 0.29792277519137184,
+    "stab": 0.7216422539342635
+  },
+  "dataset": "FreezerRegularTrain",
+  "n_classes": 2,
+  "n_kernels": 10000,
+  "n_train": 150,
+  "seconds": 1.023555400000987,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}

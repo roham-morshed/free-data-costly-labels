@@ -1,0 +1,29 @@
+{
+  "components": {
+    "chi": 4.475025133744719,
+    "knn_purity_proxy": 0.9479084451460142,
+    "n_features_used": 50.0,
+    "n_samples": 181.0,
+    "sil": 0.2851633112036107,
+    "stab": 0.8981213204020088
+  },
+  "dataset": "WormsTwoClass",
+  "n_classes": 2,
+  "n_kernels": 10000,
+  "n_train": 181,
+  "seconds": 0.7529379999996308,
+  "transform": "minirocket",
+  "transform_seed": 0,
+  "versions": {
+    "aeon": "1.5.0",
+    "joblib": "1.5.3",
+    "machine": "AMD64",
+    "numba": "0.63.1",
+    "numpy": "2.3.5",
+    "pandas": "2.3.3",
+    "platform": "Windows-10-10.0.19045-SP0",
+    "python": "3.11.4",
+    "scipy": "1.17.1",
+    "sklearn": "1.8.0"
+  }
+}
