@@ -5,7 +5,7 @@
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Datasets](https://img.shields.io/badge/UCR%20datasets-40-orange.svg)](configs/datasets.yaml)
-[![Cells](https://img.shields.io/badge/cells-2000%20%7C%200%20failures-brightgreen.svg)](paper/PAPER_NUMBERS.md)
+[![Cells](https://img.shields.io/badge/cells-2000%2C%200%20failures-brightgreen.svg)](paper/PAPER_NUMBERS.md)
 
 Code, measurements and paper artifacts for the paper *Free Data, Costly Labels*, accepted for publication in 2026.
 
